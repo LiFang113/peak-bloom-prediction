@@ -17,7 +17,7 @@
 | ------ | ----------- |
 | **src** |  The src folder contains source code for the project. |
 | **data**|The data folder contains orginal dataset and processed data used for the project. |
-| [data/processed_data/features/]() | Extracted features for ML model training |
+| [data/processed_data/features/](https://github.com/JuliaHsu/peak-bloom-prediction/tree/main/data/processed_data/features) | Extracted features for ML model training |
 
 ## Source Code
 ---
@@ -33,8 +33,8 @@ Source code are located in the /src folder. The key files are:
 
 | File | Description |
 | ---- | ----------- |
-| [ML/feature_extraction.ipynb]() | Feature extraction codes for ML model training |
-| [ML/ML_pred.ipynb]() | Codes for ML model training and prediction |
+| [ML/feature_extraction.ipynb](https://github.com/JuliaHsu/peak-bloom-prediction/blob/main/src/ML/feature_extraction.ipynb) | Feature extraction codes for ML model training |
+| [ML/ML_pred.ipynb](https://github.com/JuliaHsu/peak-bloom-prediction/blob/main/src/ML/ML_pred.ipynb) | Codes for ML model training and prediction |
 
 
 
