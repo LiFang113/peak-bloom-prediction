@@ -39,6 +39,28 @@ Source code are located in the /src folder. The key files are:
 | [ML/feature_extraction.ipynb](https://github.com/JuliaHsu/peak-bloom-prediction/blob/main/src/ML/feature_extraction.ipynb) | Feature extraction codes for ML model training |
 | [ML/ML_pred.ipynb](https://github.com/JuliaHsu/peak-bloom-prediction/blob/main/src/ML/ML_pred.ipynb) | Codes for ML model training and prediction |
 
+### Evaluation
+|                           | Mean absolute error | Mean squared error | 
+| --------------------------| --------------------| -------------------|
+| Multiple Regression       |
+| Support Vector Regression |
+
+### Predictions
+| Year | Kyoto | Washington DC | Liestal | Vancouver |
+| -----| ----- | ------------- | ------- | ----------|
+| 2022 |
+| 2023 |
+| 2024 |
+| 2025 |
+| 2026 |
+| 2027 |
+| 2028 |
+| 2029 |
+| 2030 |
+| 2031 |
+
+
+
 
 
 
