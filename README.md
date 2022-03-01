@@ -4,11 +4,11 @@
 * Date: Feb. 28th, 2022
 
 ## Introduction
-In this analysis, we demonstrate four methods of predicting the peak bloom data in the coming decade for all four locations required by the competition. The cherry trees' blossom development is dependent on weather conditions in winter or spring and species of growing degree (citation). Especially, the trees will bloom highly affects by their growing degree days(GDD), which is a measurement based on the temperature degrees of the area where it is located and the certain threshold base temperature.  Therefore, we studied the GDD calculations of the different cherry trees species listed in each location. 
+In this analysis, we demonstrate four methods of predicting the peak bloom data in the coming decade for all four locations required by the competition. The cherry trees' blossom development is dependent on weather conditions in winter or spring and species of growing degree. Especially, the trees will bloom highly affects by their growing degree days(GDD), which is a measurement based on the temperature degrees of the area where it is located and the certain threshold base temperature.  Therefore, we studied the GDD calculations of the different cherry trees species listed in each location. 
 
 ## Dataset
 1. [Peak Bloom Date dataset](https://github.com/GMU-CherryBlossomCompetition/peak-bloom-prediction/tree/main/data) provided by George Mason’s Department of Statistics cherry blossom peak bloom prediction competition.
-2. [Temperature Data between 1979 and 2022]()
+2. [Historical temperature and rainfall observations](https://psl.noaa.gov/data/gridded/data.cpc.globalprecip.html) are extracted from CPC Global Unified Gauge-Based Analysis.
 
 | File | Description |
 | ---- | ----------- |
@@ -27,7 +27,7 @@ In this analysis, we demonstrate four methods of predicting the peak bloom data 
 
 Source code are located in the /src folder. The key files are:
 
-### Multiple Regression
+### Hierarchical Linear Regressions
 
 | File | Description |
 | ---- | ----------- |
@@ -39,11 +39,16 @@ Source code are located in the /src folder. The key files are:
 | [ML/feature_extraction.ipynb](https://github.com/JuliaHsu/peak-bloom-prediction/blob/main/src/ML/feature_extraction.ipynb) | Feature extraction codes for ML model training |
 | [ML/ML_pred.ipynb](https://github.com/JuliaHsu/peak-bloom-prediction/blob/main/src/ML/ML_pred.ipynb) | Codes for ML model training and prediction |
 
+### Deep Learning - LSTM 
+| File | Description |
+| ---- | ----------- |
+| [deep_learning/LSTM_predict10years.py]()| LSTM model for PBD predictions |
+
 ### Evaluation
-|                           | Mean absolute error | Mean squared error | 
-| --------------------------| --------------------| -------------------|
-| Multiple Regression       |
-| Support Vector Regression |
+|                                       | Mean absolute error | Mean squared error | 
+| --------------------------------------| --------------------| -------------------|
+| Hierarchical Linear Regressions       |
+| Support Vector Regression             | 3.628               | 24.094             |
 
 ### Predictions
 | Year | Kyoto | Washington DC | Liestal | Vancouver |
