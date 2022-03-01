@@ -1,6 +1,6 @@
 # Cherry Blossom Peak Bloom Prediction
 * Submission to George Mason’s Department of Statistics cherry blossom peak bloom prediction competition
-* Authors: Julia Jeng, Fang Li, Julia Hsu
+* Authors: Julia Jeng, Julia Hsu, Fang Li
 * Date: Feb. 28th, 2022
 
 ## Introduction
